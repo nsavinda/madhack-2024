@@ -1,4 +1,4 @@
-# vouchee-backend
+# Madhack-backend
 
 ## Project setup
 
