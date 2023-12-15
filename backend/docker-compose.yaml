@@ -1,0 +1,29 @@
+version: '1.0'
+services:
+  server:
+    hostname: madhack-backend
+    container_name: madhack-backend
+    build: 
+      context: .
+      dockerfile: pnpm.Dockerfile
+    restart: always
+    ports:
+      - 4011:4011
+    volumes:
+      - ./src:/app/src
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./pnpm-lock.yaml:/app/pnpm-lock.yaml
+      - ./package.json:/app/package.json
+    working_dir: /app
+
+    command: ["pnpm", "i" ]  #wait for it to install
+
+    # command: ["pnpm", "start"]
+    networks:
+      - madhack-network
+    entrypoint: ["pnpm", "start"]
+
+networks:
+  madhack-network:
+    driver: bridge
+
