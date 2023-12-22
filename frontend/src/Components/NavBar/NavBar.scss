@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+@import '../../_variables.scss';
+
+.navbar {
+  text-align: center;
+  font-size: 1rem;
+  background: $bg-secondary;
+  padding: 5px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.navbar * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.navbar-item {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.navbar-link {
+  position: relative;
+  text-decoration: none;
+}
+
+//.navbar-link::before,
+//.navbar-link::after {
+//  content: '';
+//  height: 14px;
+//  width: 14px;
+//  position: absolute;
+//  transition: all .35s ease;
+//  opacity: 0;
+//}
+
+//.navbar-link::before {
+//  content: '';
+//  right: 0;
+//  top: 0;
+//  border-top: 3px solid #195baa;
+//  border-right: 3px solid #0f3764;
+//  transform: translate(-100%, 50%);
+//}
+//
+//.navbar-link::after {
+//  content: '';
+//  left: 0;
+//  bottom: 0;
+//  border-bottom: 3px solid #195baa;
+//  border-left: 3px solid #0f3764;
+//  transform: translate(100%, -50%);
+//}
+
+.navbar-link:hover::before,
+.navbar-link:hover::after {
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.navbar-link:hover {
+  background: linear-gradient(to right, #30CFD0 0%, #1a26af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
