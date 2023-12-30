@@ -1,0 +1,82 @@
+// styles.scss
+
+$primary-color: #30CFD0;
+$secondary-color: #1a26af;
+$background-color: #000000;
+$background-secondary: #161617;
+$background-tertiary: #666666;
+$background-accent: #979797;
+$text-color: #ffffff;
+$text-secondary: #abb1b4;
+$text-accent: #0088cc;
+
+// Your React component styles
+
+.timeline-container {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // max-width: 800px;
+  // margin-bottom: 50px;
+  background: linear-gradient(0deg, rgba(6, 58, 149, 0.9) 0%, rgba(17, 17, 17, 0.9) 100%), linear-gradient(0deg, rgba(34, 34, 34, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background-blend-mode: overlay;
+
+}
+
+
+.section-sub-text {
+  color: $text-secondary;
+}
+
+.section-head-text {
+  color: $text-color;
+}
+
+.vertical-timeline-element-content {
+  // background: linear-gradient(to right, $primary-color, $secondary-color, $background-accent);
+  background: transparent;
+  color: $text-color;
+  // border-right: 7px solid #232631;
+  border: solid 1px #232631;
+  box-shadow: 0 3px 0 0 #000;
+
+  border-radius: 5px;
+
+}
+.vertical-timeline-element-content-arrow {
+  border-right: none;
+  display: none;
+}
+
+.vertical-timeline-element-date {
+  color: $text-color;
+  font-size: 26px ;
+  text-align: center;
+  width: max-content !important;
+}
+
+.vertical-timeline-element-icon {
+  background: $primary-color;
+}
+
+.vertical-timeline-element-title {
+  color: $text-color;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.vertical-timeline-element-subtitle {
+  color: $text-secondary;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.timeline-point {
+  color: $text-color;
+}
+
+
+
+// Add any other styles as needed

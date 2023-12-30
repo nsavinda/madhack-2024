@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react'
+// import './App.css'
+// import NavBar from "./Components/NavBar/NavBar"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <NavBar />
+//       <Timeline />
+//     </div>
+//   );
+import React from 'react';
+import './App.scss';
+import "@fontsource/ibm-plex-mono";
+
+
+import logo from './assets/logo.png'
+import hero from './assets/hero.png';
+import NavBar from './Components/NavBar/NavBar';
+import Timeline from "./Components/Timeline/Timeline"
+import Hero from './Components/Hero/Hero';
+import Prizes from './Components/Prizes/Prizes';
+import Faq from './Components/Faq/Faq';
+import Footer from './Components/Footer/Footer';
+
+
+const App = () => {
+    return (
+        <div className="app-container">
+            <NavBar />
+            <Hero />
+            <Timeline />
+
+            <Prizes />
+
+            <Faq />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

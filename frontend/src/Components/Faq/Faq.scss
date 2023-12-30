@@ -1,0 +1,19 @@
+.faq {
+    // margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 0 20px;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(6, 58, 149, 0.9) 0%, rgba(17, 17, 17, 0.9) 100%), linear-gradient(0deg, rgba(34, 34, 34, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background-blend-mode: overlay;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+}
