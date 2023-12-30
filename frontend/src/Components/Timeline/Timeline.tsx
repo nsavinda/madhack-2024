@@ -53,7 +53,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timeline }) => (
 
 const Timeline: React.FC = () => {
   return (
-    <div>
+    <div className="timeline-container">
       {/* <motion.div> */}
         {/* <p className={styles.sectionSubText}>what i have done so far</p> */}
         <h2 className={styles.sectionHeadText}>TImeline </h2>
