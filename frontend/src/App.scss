@@ -76,6 +76,8 @@
     justify-content: space-between;
     text-align: center;
     padding: 1em 60px;
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background-blend-mode: overlay;
 
     .text-buttons {
       text-align: left;

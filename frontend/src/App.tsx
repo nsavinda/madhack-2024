@@ -21,6 +21,8 @@ import NavBar from './Components/NavBar/NavBar';
 import Timeline from "./Components/Timeline/Timeline"
 import Hero from './Components/Hero/Hero';
 import Prizes from './Components/Prizes/Prizes';
+import Faq from './Components/Faq/Faq';
+import Footer from './Components/Footer/Footer';
 
 
 const App = () => {
@@ -31,6 +33,9 @@ const App = () => {
             <Timeline />
 
             <Prizes />
+
+            <Faq />
+            <Footer />
         </div>
     );
 }
