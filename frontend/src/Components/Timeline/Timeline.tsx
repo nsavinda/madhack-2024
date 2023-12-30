@@ -54,10 +54,10 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timeline }) => (
 const Timeline: React.FC = () => {
   return (
     <div>
-      <motion.div>
+      {/* <motion.div> */}
         {/* <p className={styles.sectionSubText}>what i have done so far</p> */}
         <h2 className={styles.sectionHeadText}>TImeline </h2>
-      </motion.div>
+      {/* </motion.div> */}
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>

@@ -1,36 +1,25 @@
-import React, { JSX } from 'react'
-import './NavBar.scss'
+import React from 'react'
+import logo from '../../assets/logo.png'
 
-const Navbar = () => {
-    function navBarItem(text: string, url: string = "#"): JSX.Element {
-        return (
-            <li className="navbar-item">
-                <a href={url} className="navbar-link">
-                    {text}
-                </a>
-            </li>
-        );
-    }
+function NavBar() {
+  return (
+    <header className="header">
+    <nav className="navbar">
+        <div className="logo">
+            <img src={logo} alt="logo" />
+        </div>
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#guidelines">guidelines</a></li>
+            <li><a href="#timeline">timeline</a></li>
+            <li><a href="#prizes">prizes</a></li>
+            <li><a href="#merchandise">merchandise</a></li>
+            <li><a href="#contact">contact us</a></li>
+            <li><a href="#register">register</a></li>
+        </ul>
+    </nav>
+</header>
+  )
+}
 
-    let items: JSX.Element[] = [
-        navBarItem("About"),
-        navBarItem("Guidelines"),
-        navBarItem("Timeline"),
-        navBarItem("Prizes"),
-        navBarItem("Merchandise"),
-        navBarItem("Contact Us"),
-        navBarItem("Register")
-    ];
-
-    return (
-        <nav className="navbar">
-            <ul className="navbar-list">
-                {items.map((item, index) => (
-                    <React.Fragment key={index}>{item}</React.Fragment>
-                ))}
-            </ul>
-        </nav>
-    );
-};
-
-export default Navbar;
+export default NavBar
