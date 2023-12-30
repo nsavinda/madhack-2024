@@ -1,7 +1,22 @@
+// import React from 'react'
+// import './App.css'
+// import "@fontsource/ibm-plex-mono";
+// import NavBar from "./Components/NavBar/NavBar"
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <NavBar />
+//       <Timeline />
+//     </div>
+//   );
 import React from 'react';
 import './App.scss';
 import logo from './assets/logo.png'
 import hero from './assets/hero.png';
+import Timeline from "./Components/Timeline/Timeline"
+
 
 const App = () => {
     return (
@@ -34,6 +49,7 @@ const App = () => {
                     <img src={hero} alt="Hero" />
                 </div>
             </main>
+            <Timeline />
         </div>
     );
 }
