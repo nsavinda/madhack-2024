@@ -3,6 +3,7 @@ $blue-grad-end: #0072ff;
 
 /* Base */
 body {
+  text-align: left;
   line-height: 1.7;
   color: #cfcfd1;
   font-weight: 300;
@@ -604,3 +605,30 @@ h1, h2, h3, h4,
   width: 40px;
   height: 40px;
   line-height: 40px; }
+
+.sentence {
+  color: $blue-grad-start;
+  font-size: 2rem;
+  position: relative;
+}
+
+
+.sentence::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: 6px;
+  width: 14px;
+  height: 2px;
+  background-color: $blue-grad-start;
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
