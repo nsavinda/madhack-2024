@@ -26,7 +26,7 @@ function NavBar() {
               </div>
           </div>
           <header className="site-navbar py-3" role="banner">
-              <div className="container-fluid">
+              <div className="container">
                   <div className="row align-items-center">
                       <div className="col-11 col-xl-2">
                           <div className="logo">
