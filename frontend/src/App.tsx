@@ -28,12 +28,17 @@ const App = () => {
             <Routes>
 
             <Route path="/register" Component={Registration} />
-            <Route path="/" Component={NavBar} />
-            <Route path="/" Component={Hero} />
+            {/* <Route path="/" Component={NavBar} /> */}
+
+
+            <Route path="/" element={<div> <NavBar /> <Hero /> <Timeline /> <Prizes /> <Faq /> <Footer /> </div>} />
+            
+            {/* <Route path="/" Component={Hero} />
             <Route path="/" Component={Timeline} />
             <Route path="/" Component={Prizes} />
             <Route path="/" Component={Faq} />
-            <Route path="/" Component={Footer} />
+            <Route path="/" Component={Footer} /> */}
+
 
             </Routes>
 
