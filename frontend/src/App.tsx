@@ -1,4 +1,9 @@
 import React from 'react'
+
+import {createBrowserRouter,
+    RouterProvider,
+    Route, Routes } from 'react-router-dom'
+
 import './App.scss'
 import "@fontsource/ibm-plex-mono"
 
@@ -11,11 +16,30 @@ import Faq from './Components/Faq/Faq';
 import Footer from './Components/Footer/Footer';
 
 
+import Registration from './Components/Registration/Registration'
+
+
+
 const App = () => {
     return (
         <div className="app-container">
-            <NavBar />
+            {/* <RouterProvider router={}> */}
+
+            <Routes>
+
+            <Route path="/register" Component={Registration} />
+            <Route path="/" Component={NavBar} />
+            <Route path="/" Component={Hero} />
+            <Route path="/" Component={Timeline} />
+            <Route path="/" Component={Prizes} />
+            <Route path="/" Component={Faq} />
+            <Route path="/" Component={Footer} />
+
+            </Routes>
+
+            {/* <NavBar />
             <Hero />
+
 
 
             <Timeline />
@@ -23,7 +47,11 @@ const App = () => {
             <Prizes />
 
             <Faq />
-            <Footer />
+            <Footer /> */}
+
+            {/* </RouterProvider> */}
+
+
 
         </div>
     );
