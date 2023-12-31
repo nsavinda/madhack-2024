@@ -18,20 +18,11 @@ function NavBar() {
           <div className="site-mobile-menu">
               <div className="site-mobile-menu-header">
                   <div className="site-mobile-menu-close mt-3">
-                      <span className="icon-close2 js-menu-toggle" onClick={onMenuClick}></span>
+                      <span className="icon-close2 js-menu-toggle"></span>
                   </div>
               </div>
               <div className="site-mobile-menu-body">
-                  <ul className="site-nav-wrap">
-                      <li><a href="#about">about</a></li>
-                      <li><a href="#guidelines">guidelines</a></li>
-                      <li><a href="#timeline">timeline</a></li>
-                      <li><a href="#prizes">prizes</a></li>
-                      <li><a href="#merchandise">merchandise</a></li>
-                      <li><a href="#contact">contact us</a></li>
-                      <li><a href="#register">register</a></li>
-                      <li className="cta"><a href="#">Buy Tickets</a></li>
-                  </ul>
+
               </div>
           </div>
           <header className="site-navbar py-3" role="banner">
@@ -57,7 +48,7 @@ function NavBar() {
                           </nav>
                       </div>
                       <div className="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style={{position: "relative", top: "3px"}}><a
-                          href="#" className="site-menu-toggle js-menu-toggle text-white" onClick={onMenuClick}>
+                          href="#" className="site-menu-toggle js-menu-toggle text-white">
                           <span className="icon-menu h3"></span></a></div>
                   </div>
               </div>
