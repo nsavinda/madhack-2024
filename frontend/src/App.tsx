@@ -25,6 +25,8 @@ const App = () => {
         <div className="app-container">
             {/* <RouterProvider router={}> */}
 
+  
+
             <Routes>
 
             <Route path="/register" Component={Registration} />
@@ -33,11 +35,7 @@ const App = () => {
 
             <Route path="/" element={<div> <NavBar /> <Hero /> <Timeline /> <Prizes /> <Faq /> <Footer /> </div>} />
             
-            {/* <Route path="/" Component={Hero} />
-            <Route path="/" Component={Timeline} />
-            <Route path="/" Component={Prizes} />
-            <Route path="/" Component={Faq} />
-            <Route path="/" Component={Footer} /> */}
+        
 
 
             </Routes>
