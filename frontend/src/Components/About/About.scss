@@ -1,0 +1,22 @@
+.about-container {
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin-bottom: 50px;
+    background: linear-gradient(0deg, rgba(6, 58, 149, 0.9) 0%, rgba(17, 17, 17, 0.9) 100%), linear-gradient(0deg, rgba(34, 34, 34, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background-blend-mode: overlay;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
