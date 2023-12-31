@@ -38,6 +38,7 @@ const styles = {
     rowTitleColor: "white",
     rowContentColor: 'grey',
     arrowColor: "white",
+    
 
 };
 
