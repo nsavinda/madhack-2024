@@ -43,7 +43,7 @@ function NavBar() {
                                   <li><a href="#merchandise">merchandise</a></li>
                                   <li><a href="#contact">contact us</a></li>
                                   <li><a href="#register">register</a></li>
-                                  <li className="cta"><a href="#">Buy Tickets</a></li>
+                                  <li className="cta"><a href="#">Register Now</a></li>
                               </ul>
                           </nav>
                       </div>

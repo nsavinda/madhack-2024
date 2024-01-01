@@ -49,7 +49,7 @@ function Hero() {
                       <h1 className="d-block mb-4" data-aos="fade-up" data-aos-delay="200">MADHACK 2023</h1>
                       <span className=" mb-5 sentence" data-aos="fade-up" data-aos-delay="300">{sentences[currentIndex].substring(0, offset)}</span>
                       <br className={"d-block"}></br>
-                      <a href="#" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Buy Tickets</span></a>
+                      <a href="#" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></a>
                   </div>
               </div>
           </div>
