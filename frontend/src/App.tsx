@@ -1,8 +1,10 @@
 import React from 'react'
 
-import {createBrowserRouter,
+import {
+    createBrowserRouter,
     RouterProvider,
-    Route, Routes } from 'react-router-dom'
+    Route, Routes
+} from 'react-router-dom'
 
 import './App.scss'
 import "@fontsource/ibm-plex-mono"
@@ -17,7 +19,7 @@ import Footer from './Components/Footer/Footer';
 
 
 import Registration from './Components/Registration/Registration'
-
+import Intro from "./Components/Introduction/Intro";
 
 
 const App = () => {
@@ -25,17 +27,24 @@ const App = () => {
         <div className="app-container">
             {/* <RouterProvider router={}> */}
 
-  
 
             <Routes>
 
-            <Route path="/register" Component={Registration} />
-            {/* <Route path="/" Component={NavBar} /> */}
+                <Route path="/register" Component={Registration}/>
+                {/* <Route path="/" Component={NavBar} /> */}
 
 
-            <Route path="/" element={<div> <NavBar /> <Hero /> <Timeline /> <Prizes /> <Faq /> <Footer /> </div>} />
-            
-        
+                <Route path="/" element={
+                    <div>
+                        <NavBar/>
+                        <Hero/>
+                        <Intro/>
+                        <Timeline/>
+                        <Prizes/>
+                        <Faq/>
+                        <Footer/>
+                    </div>
+                }/>
 
 
             </Routes>
@@ -53,7 +62,6 @@ const App = () => {
             <Footer /> */}
 
             {/* </RouterProvider> */}
-
 
 
         </div>
