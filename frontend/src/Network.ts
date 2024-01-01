@@ -3,7 +3,7 @@ export class Network {
     private Network() {}
 
     public register(data: any): Promise<ResponseModel> {
-        return this.sendRequest('/api/register', 'POST', JSON.stringify(data));
+        return this.sendRequest('http://localhost:4011/api/register', 'POST', JSON.stringify(data));
     }
 
     private async sendRequest(url: string, method: string, body: string | null): Promise<any> {
