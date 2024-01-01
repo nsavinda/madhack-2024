@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Faq from "react-faq-component";
 
 import "./Faq.scss";
+
 
 const data = {
     // title: "FAQ (How it works)",
@@ -34,30 +35,23 @@ const data = {
 
 const styles = {
     bgColor: 'transparent',
-    titleTextColor: "white",
-    rowTitleColor: "white",
-    rowContentColor: 'grey',
-    arrowColor: "white",
-
+    titleTextColor: "#fff",
+    rowTitleColor: "#fff",
+    rowContentColor: '#d1d1d1',
+    arrowColor: "#fff",
 };
 
 const config = {
     animate: true,
-    // arrowIcon: "V",
     tabFocus: true
 };
 
 export default function FaqComponent() {
-
     return (
         <div className="faq">
             <div className="faq-container">
-                <h1>FAQ</h1>
-            <Faq
-                data={data}
-                styles={styles}
-                config={config}
-            />
+                <h1 className="faq-title">Frequently Asked Questions</h1>
+                <Faq data={data} styles={styles} config={config} />
             </div>
         </div>
     );
