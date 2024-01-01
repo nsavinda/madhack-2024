@@ -14,7 +14,7 @@ function NavBar() {
     }
 
   return (
-      <>
+      <div id="navbar" className="local-bootstrap">
           <div className="site-mobile-menu">
               <div className="site-mobile-menu-header">
                   <div className="site-mobile-menu-close mt-3">
@@ -25,7 +25,7 @@ function NavBar() {
 
               </div>
           </div>
-          <header className="site-navbar py-3" role="banner">
+          <header className="site-navbar py-3 site-container" role="banner">
               <div className="container">
                   <div className="row align-items-center">
                       <div className="col-11 col-xl-2">
@@ -47,29 +47,14 @@ function NavBar() {
                               </ul>
                           </nav>
                       </div>
-                      <div className="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style={{position: "relative", top: "3px"}}><a
+                      <div className="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
+                           style={{position: "relative", top: "3px", width: "unset"}}><a
                           href="#" className="site-menu-toggle js-menu-toggle text-white">
                           <span className="icon-menu h3"></span></a></div>
                   </div>
               </div>
           </header>
-      </>
-//     <header className="header">
-//     <nav className="navbar">
-//         <div className="logo">
-//             <img src={logo} alt="logo" />
-//         </div>
-//         <ul>
-//             <li><a href="#about">about</a></li>
-//             <li><a href="#guidelines">guidelines</a></li>
-//             <li><a href="#timeline">timeline</a></li>
-//             <li><a href="#prizes">prizes</a></li>
-//             <li><a href="#merchandise">merchandise</a></li>
-//             <li><a href="#contact">contact us</a></li>
-//             <li><a href="#register">register</a></li>
-//         </ul>
-//     </nav>
-// </header>
+      </div>
   )
 }
 
