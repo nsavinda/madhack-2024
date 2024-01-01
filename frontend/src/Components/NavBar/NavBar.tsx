@@ -14,7 +14,7 @@ function NavBar() {
     }
 
   return (
-      <div id="navbar" className="local-bootstrap">
+      <div className="nav-bar local-bootstrap">
           <div className="site-mobile-menu">
               <div className="site-mobile-menu-header">
                   <div className="site-mobile-menu-close mt-3">
@@ -27,7 +27,7 @@ function NavBar() {
           </div>
           <header className="site-navbar py-3 site-container" role="banner">
               <div className="container">
-                  <div className="row align-items-center">
+                  <div style={{flexWrap: "nowrap"}} className="row align-items-center">
                       <div className="col-11 col-xl-2">
                           <div className="logo">
                               <img src={logo} alt="logo" />
