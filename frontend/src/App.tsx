@@ -1,8 +1,6 @@
 import React from 'react'
 
 import {
-    createBrowserRouter,
-    RouterProvider,
     Route, Routes
 } from 'react-router-dom'
 
@@ -25,18 +23,11 @@ import Intro from "./Components/Introduction/Intro";
 const App = () => {
     return (
         <div className="app-container">
-            {/* <RouterProvider router={}> */}
-
-
+            <NavBar/>
             <Routes>
-
                 <Route path="/register" Component={Registration}/>
-                {/* <Route path="/" Component={NavBar} /> */}
-
-
                 <Route path="/" element={
                     <div>
-                        <NavBar/>
                         <Hero/>
                         <Intro/>
                         <Timeline/>
@@ -45,25 +36,7 @@ const App = () => {
                         <Footer/>
                     </div>
                 }/>
-
-
             </Routes>
-
-            {/* <NavBar />
-            <Hero />
-
-
-
-            <Timeline />
-
-            <Prizes />
-
-            <Faq />
-            <Footer /> */}
-
-            {/* </RouterProvider> */}
-
-
         </div>
     );
 }

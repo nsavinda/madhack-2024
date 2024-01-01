@@ -249,6 +249,13 @@
   position: relative;
   color: #212529;
 }
+.nav-bar .site-mobile-menu .site-nav-wrap a.cta {
+  background-color: #212529;
+  color: white;
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .nav-bar .site-mobile-menu .site-nav-wrap a:hover {
   color: #0072ff;
 }

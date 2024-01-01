@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
 import './NavBar.scss'
+import {Link} from "react-router-dom";
 
 function NavBar() {
 
@@ -36,14 +37,13 @@ function NavBar() {
                       <div className="col-12 col-md-10 d-none d-xl-block">
                           <nav className="site-navigation position-relative text-right" role="navigation">
                               <ul className="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                                  <li><a href="#about">about</a></li>
-                                  <li><a href="#guidelines">guidelines</a></li>
-                                  <li><a href="#timeline">timeline</a></li>
-                                  <li><a href="#prizes">prizes</a></li>
-                                  <li><a href="#merchandise">merchandise</a></li>
-                                  <li><a href="#contact">contact us</a></li>
-                                  <li><a href="#register">register</a></li>
-                                  <li className="cta"><a href="#">Register Now</a></li>
+                                  <li><Link to="/#about">about</Link></li>
+                                  <li><Link to="/#guidelines">guidelines</Link></li>
+                                  <li><Link to="/#timeline">timeline</Link></li>
+                                  <li><Link to="/#prizes">prizes</Link></li>
+                                  <li><Link to="/#merchandise">merchandise</Link></li>
+                                  <li><Link to="/#contact">contact us</Link></li>
+                                  <li><Link className="cta" to="/register">Register Now</Link></li>
                               </ul>
                           </nav>
                       </div>
