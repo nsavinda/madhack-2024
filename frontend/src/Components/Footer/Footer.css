@@ -1,0 +1,121 @@
+.footer {
+  background: #000000;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  bottom: 0;
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center content horizontally */
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-left {
+  margin-top: 40px;
+}
+
+.footer-logo {
+  width: auto;
+  height: 100px;
+  margin: 0 20px;
+}
+.footer-logo img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-text {
+  color: #FFFFFF;
+  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Add this class for the Facebook logo */
+.logo {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.2);
+  /* Scale up the logo on hover */
+}
+
+.year {
+  margin-top: 40px;
+}
+
+.socials.links {
+  margin-top: 40px;
+}
+.socials.links ul {
+  display: flex;
+  gap: 1em;
+  /* Adjust the gap between social logos */
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+.socials.links ul li a.logo {
+  /* Apply the Facebook logo styling */
+  /* Styling properties for the Facebook logo */
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+  margin-right: 10px;
+  /* Add right margin between logos */
+}
+.socials.links ul li a.logo:hover {
+  transform: scale(1.2);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  list-style-type: none;
+  padding: 0;
+}
+.footer-links li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.footer-links li a:hover {
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-logo, .footer-text {
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */
