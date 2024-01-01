@@ -36,6 +36,9 @@
   }
 }
 
+.sentence-container {
+  min-height: 3em;
+}
 
 .sentence::after {
   content: '';

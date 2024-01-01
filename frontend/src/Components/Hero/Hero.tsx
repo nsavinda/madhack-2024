@@ -50,7 +50,9 @@ function Hero() {
                   <div className="col-md-10">
                       <span className="d-block mb-3 caption" data-aos="fade-up" data-aos-delay="100">By IEEE Student Branch of UCSC</span>
                       <h1 className="d-block mb-4" data-aos="fade-up" data-aos-delay="200">MADHACK 2023</h1>
-                      <span className="sentence" data-aos="fade-up" data-aos-delay="300" style={{display: 'table'}}>{sentences[currentIndex].substring(0, offset)}</span>
+                      <div className="sentence-container">
+                          <span className="sentence" data-aos="fade-up" data-aos-delay="300" style={{display: 'table'}}>{sentences[currentIndex].substring(0, offset)}</span>
+                      </div>
                       <br className={"d-block"}></br>
                       <a href="#" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></a>
                   </div>
