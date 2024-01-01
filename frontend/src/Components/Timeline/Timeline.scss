@@ -1,82 +1,59 @@
-// styles.scss
-
-$primary-color: #30CFD0;
-$secondary-color: #1a26af;
-$background-color: #000000;
-$background-secondary: #161617;
-$background-tertiary: #666666;
-$background-accent: #979797;
-$text-color: #ffffff;
-$text-secondary: #abb1b4;
-$text-accent: #0088cc;
-
-// Your React component styles
-
 .timeline-container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // max-width: 800px;
-  // margin-bottom: 50px;
   background: linear-gradient(0deg, rgba(6, 58, 149, 0.9) 0%, rgba(17, 17, 17, 0.9) 100%), linear-gradient(0deg, rgba(34, 34, 34, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
   background-blend-mode: overlay;
-
-}
-
-
-.section-sub-text {
-  color: $text-secondary;
+  padding: 30px 10px; // Reduced padding for mobile
 }
 
 .section-head-text {
-  color: $text-color;
+  color: #fff;
+  text-align: center;
+  font-size: 2em; // Smaller font for mobile
+  margin-bottom: 20px;
 }
 
 .vertical-timeline-element-content {
-  // background: linear-gradient(to right, $primary-color, $secondary-color, $background-accent);
   background: transparent;
-  color: $text-color;
-  // border-right: 7px solid #232631;
+  color: #fff;
   border: solid 1px #232631;
-  box-shadow: 0 3px 0 0 #000;
-
-  border-radius: 5px;
-
-}
-.vertical-timeline-element-content-arrow {
-  border-right: none;
-  display: none;
-}
-
-.vertical-timeline-element-date {
-  color: $text-color;
-  font-size: 26px ;
-  text-align: center;
-  width: max-content !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 15px; // Reduced padding
+  transition: transform 0.3s ease;
 }
 
 .vertical-timeline-element-icon {
-  background: $primary-color;
+  box-shadow: 0 0 0 4px rgba(48, 207, 208, 0.2);
+  transition: box-shadow 0.3s ease;
 }
 
-.vertical-timeline-element-title {
-  color: $text-color;
-  font-size: 24px;
+.vertical-timeline-element-date {
+  color: #fff;
+  font-size: 0.8em; // Smaller font for mobile
   font-weight: bold;
 }
 
-.vertical-timeline-element-subtitle {
-  color: $text-secondary;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+.text-white {
+  color: #fff;
 }
 
-.timeline-point {
-  color: $text-color;
+.text-secondary {
+  color: #abb1b4; // Lighter shade for secondary text
 }
 
+@media screen and (max-width: 768px) {
+  .vertical-timeline-element-content {
+      font-size: 0.9em; // Smaller font size for content
+  }
 
+  .vertical-timeline-element-date {
+      font-size: 0.7em; // Even smaller for dates
+  }
 
-// Add any other styles as needed
+  .vertical-timeline-element-icon {
+      transform: scale(0.8); // Smaller icons
+  }
+
+  .text-white, .text-secondary {
+      font-size: 0.9em; // Adjust text size
+  }
+}

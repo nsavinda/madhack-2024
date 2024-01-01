@@ -1,57 +1,76 @@
 .footer {
-    background: rgba(17, 17, 17, 0.9) 100%;
-    padding: 20px 40px;
+    background: #111; // Dark background for contrast
+    padding: 40px 20px; // More padding for better spacing
     text-align: center;
     font-size: 14px;
-    color: #6c757d;
-    // margin-top: 20px;
-    // margin-bottom: 20px;
-    // position: absolute;
+    color: #ddd; // Lighter text for better readability
     bottom: 0;
-    // width: 100%;
+    width: 100%;
     min-height: fit-content;
 }
 
-
-.footer-container{
+.footer-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row; // Row direction for larger screens
+    justify-content: space-between; // Space out elements
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1200px; // Max width for content
+    margin: 0 auto; // Centering the container
 }
 
 .footer-logo {
-    max-width: 350px;
-    width: 90%;
-    margin-right: 1em;
+    width: auto;
+    height: 100px; // Fixed height for the logo
+    margin: 0 20px; // Margin for spacing
+
     img {
-        width: 100%;
+        width: auto;
         height: 100%;
         object-fit: contain;
     }
 }
 
-.footer-links {
+.footer-text {
+    color: #ccc; // Slightly lighter color for the text
+    margin-top: 20px;
+    max-width: 600px; // Max width for better readability
+    line-height: 1.5; // Line height for readability
+}
 
+.footer-links {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    margin: 1em;
+    flex-direction: column; // Column direction for mobile
+    gap: 0.5em; // Reduced gap
     list-style-type: none;
     padding: 0;
-    a {
-        color: #6c757d;
-        text-decoration: none;
-        font-size: 1em;
-        position: relative;
-        padding: auto;
 
-        transition: color 0.3s ease;
-        &:hover {
-            color: #777;
+    li {
+        a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                color: #fff;
+                transform: translateY(-2px); // Slight move up on hover
+            }
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; // Stack elements in a column on mobile
+        text-align: center;
+    }
+
+    .footer-logo, .footer-text {
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        flex-direction: row; // Horizontal layout for links
+        justify-content: center;
     }
 }
