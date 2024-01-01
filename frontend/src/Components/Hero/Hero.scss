@@ -1,0 +1,64 @@
+@import '../../_variables.scss';
+
+
+.site-hero {
+  margin-bottom: 10rem;
+}
+
+.site-hero, .site-hero .row {
+  min-height: 700px;
+  height: calc(100vh - 95px);
+}
+
+.site-hero.inner, .site-hero.inner .row {
+  min-height: 400px;
+  height: calc(50vh - 95px);
+}
+
+.site-hero h1 {
+  font-size: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from($blue-grad-start), color-stop(70%, $blue-grad-end));
+  background: -webkit-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
+  background: -o-linear-gradient(left, $blue-grad-start, $blue-grad-end 70%);
+  background: linear-gradient(to right, $blue-grad-start, $blue-grad-end 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 992px) {
+  .site-hero h1 {
+    font-size: 6rem;
+  }
+}
+
+.site-hero .caption {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .site-hero .caption {
+    font-size: 1.7rem;
+  }
+}
+
+
+.sentence::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: 6px;
+  width: 14px;
+  height: 2px;
+  background-color: $blue-grad-start;
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
