@@ -12,7 +12,7 @@ import Faq from "react-faq-component";
 
 function Prizes() {
   return (
-      <div className="site-section local-bootstrap remove-top-pad">
+      <div className="site-section local-bootstrap remove-top-pad" id={"prizes"}>
           <div className="container">
               <div className="row">
                   <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">

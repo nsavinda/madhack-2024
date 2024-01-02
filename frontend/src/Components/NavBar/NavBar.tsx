@@ -37,13 +37,12 @@ function NavBar() {
                       <div className="col-12 col-md-10 d-none d-xl-block">
                           <nav className="site-navigation position-relative text-right" role="navigation">
                               <ul className="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                                  <li><Link to="/#about">about</Link></li>
-                                  <li><Link to="/#guidelines">guidelines</Link></li>
-                                  <li><Link to="/#timeline">timeline</Link></li>
-                                  <li><Link to="/#prizes">prizes</Link></li>
-                                  <li><Link to="/#merchandise">merchandise</Link></li>
-                                  <li><Link to="/#contact">contact us</Link></li>
-                                  <li><Link className="cta" to="/register">Register Now</Link></li>
+                                  <li><a href="/#">home</a></li>
+                                  <li><a href="/#about">about</a></li>
+                                  <li><a href="/#timeline">timeline</a></li>
+                                  <li><a href="/#prizes">prizes</a></li>
+                                  <li><a href="/#faq">faq</a></li>
+                                  <li><a className="cta" href="/register">Register Now</a></li>
                               </ul>
                           </nav>
                       </div>

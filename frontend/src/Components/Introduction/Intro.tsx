@@ -4,7 +4,7 @@ import presents from '../../assets/presents.png'
 
 export default function Intro() {
     return (
-        <div className="site-section local-bootstrap">
+        <div className="site-section local-bootstrap" id={"about"}>
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">

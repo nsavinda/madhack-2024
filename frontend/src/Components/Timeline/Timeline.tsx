@@ -9,6 +9,7 @@ import { styles } from "../style";
 import { timelineData } from "../data";
 
 import "./Timeline.scss";
+import Faq from "react-faq-component";
 
 
 interface TimelineCardProps {
@@ -49,17 +50,96 @@ const TimelineCard: React.FC<TimelineCardProps> = ({ timeline,position }) => (
 );
 
 const Timeline: React.FC = () => {
+
+  let items = [
+    {
+      date: "Jan 5th",
+      event: "Awareness Session",
+      description: "Lorem ipsum dolor sit amet",
+      state: "Virtual"
+    },
+    {
+      date: "Jan 10th",
+      event: "App Designing",
+      description: "Lorem ipsum dolor sit amet",
+      state: "Virtual"
+    },
+    {
+      date: "Jan 20th",
+      event: "Flutter Session - Basics",
+      description: "Lorem ipsum dolor sit amet",
+      state: "Onsite"
+    },
+    {
+      date: "Jan 21st",
+      event: "Flutter Session - Advanced",
+      description: "Lorem ipsum dolor sit amet",
+      state: "Onsite"
+    },
+    {
+      date: "Jan 28th",
+      event: "Initial round submission deadline",
+      description: "Lorem ipsum dolor sit amet",
+      state: ""
+    },
+    {
+      date: "Feb 1st",
+      event: "Announcing of Finalists",
+      description: "Lorem ipsum dolor sit amet",
+      state: ""
+    },
+    {
+      date: "Feb 3rd",
+      event: "Final Hackathon",
+      description: "Lorem ipsum dolor sit amet",
+      state: "Onsite"
+    },
+    {
+      date: "Feb 4th",
+      event: "Award Ceremony",
+      description: "Lorem ipsum dolor sit amet",
+      state: "Onsite"
+    },
+  ]
+
+  function timelineItem(date: string, event: string, description: string, state: string, dataDelay: number, borderTop: boolean = false) {
+    return (
+        <div className={`col-12 border-bottom py-5 ${borderTop ? " border-top " : ""}`} data-aos="fade" data-aos-delay={`${dataDelay}`}>
+          <div className="row align-items-stretch">
+            <div className="col-md-3 text-white mb-3 mb-md-0"><span className="h4">{date}</span> <span>{state}</span></div>
+            <div className="col-md-9">
+              <h2 className="text-white">{event}</h2>
+              <span>{description}</span>
+            </div>
+          </div>
+        </div>
+    )
+  }
+
   return (
-    <div className="timeline-container">
-      <h2 className={styles.sectionHeadText}>Timeline</h2>
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
-          {timelineData.map((timeline, index) => (
-            <TimelineCard key={index} timeline={timeline} position={index % 2 === 0 ? "left" : "right"} />
-          ))}
-        </VerticalTimeline>
+      <div className="site-section" id={"timeline"}>
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col-lg-4" data-aos="fade-up">
+              <div className="site-section-heading">
+                <h2>Programs</h2>
+              </div>
+            </div>
+            <div className="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus
+                eligendi. Nesciunt repellendus ab voluptatibus.</p>
+            </div>
+          </div>
+          <div className="row align-items-stretch program">
+            {
+              items.map((item, index) => {
+                return timelineItem(item.date, item.event, item.description, item.state,
+                    200 + 100*index, index == 0)
+              })
+            }
+          </div>
+        </div>
       </div>
-    </div>
   );
 };
 
