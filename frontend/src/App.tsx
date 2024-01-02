@@ -33,10 +33,10 @@ const App = () => {
                         <Timeline/>
                         <Prizes/>
                         <Faq/>
-                        <Footer/>
                     </div>
                 }/>
             </Routes>
+            <Footer/>
         </div>
     );
 }

@@ -2,6 +2,8 @@ import React from "react";
 import Faq from "react-faq-component";
 
 import "./Faq.scss";
+import presents from "../../assets/presents.png";
+import flutter_react from "../../assets/flutter_react.png";
 
 
 const data = {
@@ -48,10 +50,24 @@ const config = {
 
 export default function FaqComponent() {
     return (
-        <div className="faq">
-            <div className="faq-container">
-                <h1 className="faq-title">Frequently Asked Questions</h1>
-                <Faq data={data} styles={styles} config={config} />
+        <div className="site-section local-bootstrap">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div className="site-section-heading">
+                            <h2>
+                                <span>FAQ</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div className="row align-items-center speaker">
+                    <div className="faq">
+                        <div className="faq-container">
+                            <Faq data={data} styles={styles} config={config} />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
