@@ -17,9 +17,10 @@ export default function Registration() {
   
   return (
     <div className="site-section local-bootstrap reg-section">
-    <h1 className='p-2'> Register for the Awareness Session </h1>
 
     <div className="container">
+    <h1 className='py-2'> Register for the Awareness Session </h1>
+
 
 
       <div className="row">
