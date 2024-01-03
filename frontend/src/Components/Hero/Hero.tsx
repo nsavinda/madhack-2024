@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './Hero.scss'
-
+import { Link } from 'react-router-dom';
 
 
 function Hero() {
@@ -54,7 +54,8 @@ function Hero() {
                           <span className="sentence" data-aos="fade-up" data-aos-delay="300" style={{display: 'table'}}>{sentences[currentIndex].substring(0, offset)}</span>
                       </div>
                       <br className={"d-block"}></br>
-                      <a href="/register" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></a>
+                      {/* <a href="/register" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></a> */}
+                        <Link to="/register" className="btn-custom mt-5" data-aos="fade-up" data-aos-delay="400"><span>Register Now</span></Link>
                   </div>
               </div>
           </div>
