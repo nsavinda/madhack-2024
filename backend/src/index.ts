@@ -6,12 +6,13 @@ import sessionRegRoute from "./Routes/sessionReg";
 dotenv.config();
 
 const URL = process.env.MONGO || "";
+const ORIGIN = process.env.ORIGIN || "";
 
 const app: Express = express();
 app.use(express.json());
 app.use(cors(
     {
-        origin: "http://localhost:3000",
+        origin: ORIGIN,
         methods: ["GET", "POST", "PUT", "DELETE"]
     }
 ));
