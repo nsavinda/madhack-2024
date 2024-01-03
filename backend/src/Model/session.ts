@@ -1,30 +1,35 @@
 import {Document, Schema , model} from 'mongoose'
+import mongoose from "mongoose";
 
-
-const sessionSchema = new Schema({
+const sessionSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true
     },
-    fullName: {
+    name: {
         type: String,
         required: true
     },
-    mobile:{
+    number:{
         type: String,
         required: true
     },
     university:{
         type: String,
         required: true
+    },
+    year:{
+        type: String,
+        required: true
     }
-    });
+});
 
-interface ISession extends Document {
-    email: string;
-    fullName: string;
-    mobile: string;
-    university: string;
-}
+// interface ISession extends Document {
+//     email: string;
+//     fullName: string;
+//     mobile: string;
+//     university: string;
+//     year: string;
+// }
 
-export default model<ISession>('Session', sessionSchema);
+export default mongoose.model('Session', sessionSchema);
