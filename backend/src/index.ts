@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import authRoute from "../src/Routes/auth";
 dotenv.config();
 
-// const URL = process.env.MONGO || "";
+const URL = process.env.MONGO || "";
 
 const app: Express = express();
 app.use(express.json());
