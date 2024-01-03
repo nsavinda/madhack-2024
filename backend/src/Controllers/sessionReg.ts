@@ -2,7 +2,7 @@ import Session from "../Model/session";
 import{  Request, Response } from "express";
 
 export const register = async (req: Request, res: Response) => {
-  console.log("aaaa", req.body)
+  // console.log("", req.body)
   try {
     const newSession = new Session({
       email: req.body.email,
@@ -12,8 +12,13 @@ export const register = async (req: Request, res: Response) => {
       year: req.body.year,
     });
     await newSession.save();
-    res.status(200).send("newSession has been created");
-    res.status(200).send("Session has been created");
+
+    res.status(200).json({
+      success: true,
+      message: "Registered successfully",
+      data: newSession,
+    });
+    
   } catch (err) {
     res.send(err)
     console.log(err)

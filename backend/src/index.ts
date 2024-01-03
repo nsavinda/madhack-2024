@@ -2,7 +2,7 @@ import express,{ Express , Request, Response} from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import authRoute from "../src/Routes/auth";
+import sessionRegRoute from "./Routes/sessionReg";
 dotenv.config();
 
 const URL = process.env.MONGO || "";
@@ -25,11 +25,11 @@ app.use(cors(
 //     res.send(response);
 // });
 
-app.use("/api/register", authRoute);
+app.use("/api/register", sessionRegRoute);
 
 const connect = async () => {
   try {
-    await mongoose.connect("mongodb+srv://udeeshaprabhashana123:Udeesha1234@cluster0.rg8crrl.mongodb.net/?retryWrites=true&w=majority");
+    await mongoose.connect(URL);
     console.log("Connect to mongoDB");
   } catch (error) {
     throw error;
