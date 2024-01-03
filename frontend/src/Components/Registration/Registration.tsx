@@ -16,10 +16,14 @@ export default function Registration() {
   }
   
   return (
-      <div className="site-section local-bootstrap reg-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 aos-init aos-animate" data-aos="fade-up">
+    <div className="site-section local-bootstrap reg-section">
+    <h1 className='p-2'> Register for the Awareness Session </h1>
+
+    <div className="container">
+
+
+      <div className="row">
+        <div className="col-md-12 aos-init aos-animate" data-aos="fade-up">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="row form-group">
                   <div className="col-md-12">
